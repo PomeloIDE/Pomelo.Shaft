@@ -1,0 +1,54 @@
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background-color:#32383d;
+    font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-size:12px;
+    background-color: rgb(51,51,51);
+}
+
+@media screen and (orientation: portrait) {
+}
+
+@media screen and (orientation: landscape) {
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(70,70,70);
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+    display: inline-block;
+}
+
+.key:active {
+    background: #a6b62c;
+}
+
+.left {
+    position: absolute;
+    width: 300px;
+    left: 0;
+    height: 100%;
+    bottom: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: 0;
+}
+
+.right {
+    position: absolute;
+    width: 300px;
+    right: 0;
+    height: 100%;
+    bottom: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: 0;
+}
