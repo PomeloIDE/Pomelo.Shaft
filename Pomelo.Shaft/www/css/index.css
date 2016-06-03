@@ -27,7 +27,7 @@ body {
     display: inline-block;
 }
 
-.key:active {
+.key:active, .auto-complete-item:active {
     background: #a6b62c;
 }
 
@@ -52,5 +52,53 @@ body {
 }
 
 .non-display {
-    visibility: hidden;
+    background: none;
+}
+
+.non-display:active {
+    background: none;
+}
+
+.current-line {
+    height: 80px;
+    line-height: 80px;
+    font-size: 28px;
+    width: calc(100% - 40px);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.auto-complete {
+    width: 120px;
+    left: 50%;
+    position: fixed;
+    margin-left: -60px;
+    top: 120px;
+    height: calc(100% - 127px);
+    overflow-y: auto;
+    border: 1px solid #aaa;
+}
+
+.auto-complete-item {
+    width: 100%;
+    padding: 20px 5px;
+    font-size: 18px;
+    color: #fff;
+    border-bottom: 1px solid #aaa;
+    text-overflow: ellipsis;
+}
+
+.auto-complete-item:last-child {
+    border: none;
+}
+
+.highlight {
+    color: #a6b62c;
+}
+
+.auto-complete-item:active .highlight {
+    color: #000;
 }
